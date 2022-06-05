@@ -1,6 +1,9 @@
 from flask import Flask,render_template
+from dotenv import load_dotenv
+import os
 import socket
 
+load_dotenv()
 app = Flask(__name__)
 
 @app.route("/")
@@ -14,4 +17,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8081)
+    app.run(host='0.0.0.0', port=os.getenv('PORT'))
