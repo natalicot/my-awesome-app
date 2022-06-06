@@ -25,7 +25,7 @@ echo "PORT=8080" > .env
 #### Install requirements
 
 ```sh
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 #### Run the application
 
